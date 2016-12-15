@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:controls="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        layout="@layout/page_head" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#66CCCC"
+        android:paddingLeft="10dp"
+        android:paddingBottom="15dp"
+        android:layout_height="wrap_content">
+        <cnblog.droid.utils.RoundImageView
+            android:src="@drawable/dog"
+            android:layout_height="65dp"
+            controls:border_width="3dp"
+            controls:border_color="#CCCCCC"
+            android:id="@+id/img_avator"
+            android:layout_marginRight="10dp"
+            android:layout_width="65dp" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/text_blogapp"
+            android:layout_marginLeft="3dp"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            android:layout_toRightOf="@+id/img_avator"
+            android:text="IT白痴" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/text_homepage"
+            android:layout_marginLeft="3dp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@+id/img_avator"
+            android:layout_below="@+id/text_blogapp"
+            android:text="http://www.cnblogs.com/CallMeUncle/" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/text_blog_count"
+            android:layout_marginLeft="3dp"
+            android:textColor="@android:color/white"
+            android:layout_toRightOf="@+id/img_avator"
+            android:layout_below="@+id/text_homepage"
+            android:text="博文数:60" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/text_lastupdate"
+            android:textColor="@android:color/white"
+            android:layout_toRightOf="@+id/text_blog_count"
+            android:layout_below="@+id/text_homepage"
+            android:layout_marginLeft="4dp"
+            android:text="最后更新:2天前" />
+    </RelativeLayout>
+    <cnblog.droid.pullableview.PullToRefreshLayout
+        android:id="@+id/refresh_view"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include
+            layout="@layout/refresh_head" />
+        <cnblog.droid.pullableview.PullableListView
+            android:id="@+id/pListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+        <include
+            layout="@layout/load_more" />
+    </cnblog.droid.pullableview.PullToRefreshLayout>
+</LinearLayout>

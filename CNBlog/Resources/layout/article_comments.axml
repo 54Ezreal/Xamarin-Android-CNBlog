@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="20"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        layout="@layout/page_head" />
+    <cnblog.droid.pullableview.PullToRefreshLayout
+        android:id="@+id/refresh_view"
+        android:layout_above="@+id/write_comments"
+        android:layout_below="@+id/phead"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include
+            layout="@layout/refresh_head" />
+        <cnblog.droid.pullableview.PullableListView
+            android:id="@+id/pListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:divider="@color/gray"
+            android:dividerHeight="1dp" />
+        <include
+            layout="@layout/load_more" />
+    </cnblog.droid.pullableview.PullToRefreshLayout>
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:id="@+id/write_comments"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingTop="3dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="3dp"
+        android:layout_width="match_parent">
+        <EditText
+            android:layout_height="40dp"
+            android:inputType="textMultiLine"
+            android:hint="说点儿什么吧.."
+            android:layout_width="0dp"
+            android:paddingLeft="1dp"
+            android:background="@drawable/bg_edittext"
+            android:layout_weight="3"
+            android:enabled="true"
+            android:id="@+id/text_comment" />
+        <Button
+            android:layout_height="35dp"
+            android:layout_width="0dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_style"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/btn_send"
+            android:layout_weight="1"
+            android:text="发送" />
+    </LinearLayout>
+</RelativeLayout>

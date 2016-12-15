@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">  
+    <item android:state_pressed="true">  
+        <shape>  
+            <solid android:color="@color/btn_preseed" /> 
+<!--             <gradient android:startColor="#0d76e1" android:endColor="#0d76e1"  
+                android:angle="270" /><code class="comments">//颜色渐变</code>  -->
+<!--            <stroke android:width="1dip" android:color="#f403c9" /><code class="comments">//按钮边缘</code>  -->
+            <corners android:radius="4dp" /><code class="comments">//按钮四个圆角</code>  
+            <padding android:left="5dp" android:top="5dp"  
+                android:right="5dp" android:bottom="5dp" /><code class="comments">//按钮文字和边缘距离(内边距)</code>  
+        </shape>  
+    </item>  
+   
+    <item android:state_focused="true">  
+        <shape>  
+            <solid android:color="@color/btn_preseed" /> 
+            <corners android:radius="4dp" />  
+            <padding android:left="5dp" android:top="5dp"  
+                android:right="10dp" android:bottom="5dp" />  
+        </shape>  
+    </item>  
+   
+    <item>  
+        <shape>  
+            <solid android:color="@color/title_bg" /> 
+            <corners android:radius="2dp" />  
+            <padding android:left="5dp" android:top="5dp"  
+                android:right="5dp" android:bottom="5dp" />  
+        </shape>  
+    </item>
+</selector>  

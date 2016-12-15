@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:layout_gravity="center_vertical"
+        android:background="@color/title_bg"
+        android:paddingBottom="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <Button
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/titlebar_menu_selector"
+            android:id="@+id/title_bar_left_menu"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="10dp" />
+        <TextView
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textSize="22sp"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="博客园" />
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:layout_width="match_parent">
+            <Button
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:id="@+id/btn_blogger_search"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/titlebar_search_selector"
+                android:layout_gravity="left|center_vertical" />
+            <Button
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/titlebar_more_selector"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="15dp" />
+        </LinearLayout>
+    </LinearLayout>
+<!--app:tabMode="scrollable"  这个属性我在代码中设置了-->
+<!-- tabLayout.setTabMode(TabLayout.MODE_SCROLLABLE);-->
+    <android.support.design.widget.TabLayout
+        android:id="@+id/sliding_tabs"
+        style="@style/MyCustomTabLayout"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:background="@android:color/white" />
+</LinearLayout>

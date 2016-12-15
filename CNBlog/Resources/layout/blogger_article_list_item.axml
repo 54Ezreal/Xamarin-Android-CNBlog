@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="6dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingBottom="4dp"
+    android:background="@android:color/white">
+    <TextView
+        android:text="聊一聊程序员的自我修养"
+        android:id="@+id/text_title"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:singleLine="true"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+    <TextView
+        android:text="发布于:2016-10-1"
+        android:id="@+id/text_publish_ago"
+        android:textColor="#666666"
+        android:textSize="12sp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/text_author"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" />
+    <!--<View
+        android:layout_height="1px"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="4dp"
+        android:background="#CCCCCC"
+        android:layout_width="fill_parent" />-->
+</LinearLayout>

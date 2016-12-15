@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{56E953E8-F883-487F-B31B-FCA6FC3785DE}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="C:\Users\HuShuai\Desktop\CNBLogs\CNBlog\CNBlog\Resources\layout\menu.axml" line="77" column="1" />
+      <Breakpoint file="C:\Users\HuShuai\Desktop\CNBLogs\CNBlog\CNBlog\ArticleDetailActivity.cs" line="128" column="1" />
+      <Breakpoint file="C:\Users\HuShuai\Desktop\CNBlog\CNBlog\Resources\layout\blogger_search.axml" line="33" column="1" />
+      <Breakpoint file="C:\Users\HuShuai\Desktop\CNBlog\CNBlog.API\Service\UserService.cs" line="48" column="1" />
+      <Breakpoint file="C:\Users\HuShuai\Desktop\CNBlog\CNBlog.API\Service\UserService.cs" line="86" column="1" />
+      <Breakpoint file="C:\Users\HuShuai\Documents\Visual Studio 2015\Projects\CNBlogAPI\CNBlogAPI\Service\BlogService.cs" line="51" column="1" />
+      <Breakpoint file="C:\Users\HuShuai\Desktop\CNBlog\CNBlog\IndexPageFragment.cs" line="124" column="1" />
+      <Breakpoint file="C:\Users\HuShuai\Desktop\CNBlog\CNBlog\Utils\HttpHelper.cs" line="40" column="1" />
+      <Breakpoint file="C:\Users\ljl\Desktop\CNBlog\CNBlog\LoginActivity.cs" line="87" column="1" />
+      <Breakpoint file="C:\Users\HuShuai\Desktop\CNBlog\CNBlog\ArticleCommentsActivity.cs" line="105" column="1" />
+      <Breakpoint file="C:\Users\HuShuai\Desktop\CNBlog\CNBlog\ArticleCommentsActivity.cs" line="136" column="1" />
+      <Breakpoint file="C:\Users\HuShuai\Desktop\CNBlog\CNBlog\ArticleCommentsActivity.cs" line="139" column="1" />
+      <Breakpoint file="C:\Users\ljl\Desktop\CNBlog\CNBlog\EssenceFragement.cs" line="45" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.CNBlog.Android AndroidDesignerPreferredDevice="Nexus 4" AndroidDesignerPreferredTheme="Theme.DeviceDefault" PreferredExecutionTarget="Android.SelectDevice" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="CNBlog\Activities\ArticleDetailActivity.cs">
+    <Files>
+      <File FileName="CNBlog\Activities\ArticleCommentsActivity.cs" Line="80" Column="5" />
+      <File FileName="CNBlog\Activities\BaseActivity.cs" Line="7" Column="6" />
+      <File FileName="CNBlog\Resources\values\styles.xml" Line="7" Column="49" />
+      <File FileName="CNBlog\Activities\ArticleDetailActivity.cs" Line="65" Column="6" />
+      <File FileName="CNBlogAPI\Service\BlogService.cs" Line="120" Column="34" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.CNBlog.Droid AndroidDesignerPreferredDevice="Nexus 4" AndroidDesignerPreferredTheme="Theme.DeviceDefault" PreferredExecutionTarget="Android.192.168.56.101:5555" />
+  <MonoDevelop.Ide.ItemProperties.CNBlog.droid AndroidDesignerPreferredDevice="Nexus 4" AndroidDesignerPreferredTheme="loading_dialog" PreferredExecutionTarget="Android.11ca180b" />
+</Properties>

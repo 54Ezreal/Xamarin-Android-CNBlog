@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">CNBlog</string>
+	<string name="query_waiting_msg">查询中,请稍候...</string>
+  <string name="loginout_msg">注销中,请稍候...</string>
+	<string name="login_msg">正在登录中,请稍候...</string>
+	<string name="login_faild">登录失败,请重试</string>
+	<drawable name="bg_loading">#00000000</drawable>
+  <string name="pull_to_refresh">下拉刷新</string>
+  <string name="release_to_refresh">释放立即刷新</string>
+  <string name="refreshing">正在刷新...</string>
+  <string name="refresh_succeed">刷新成功</string>
+  <string name="refresh_fail">刷新失败</string>
+  <string name="pullup_to_load">上拉加载更多</string>
+  <string name="release_to_load">释放立即加载</string>
+  <string name="loading">正在加载...</string>
+  <string name="load_succeed">加载成功</string>
+  <string name="load_fail">加载失败</string>
+  <string name="check_network">请检查网络连接</string>
+  <string name="request_error">请求失败</string>
+	<string name="publish_comments_fail">发布评论失败</string>
+	<string name="publish_comments_success">发布评论成功</string>
+  <string name="please_login">请先登录</string>
+  <string name="mark_success">收藏成功</string>
+  <string name="mark_fail">收藏失败</string>
+</resources>

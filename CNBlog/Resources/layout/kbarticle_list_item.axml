@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:text="聊一聊程序员的自我修养"
+        android:id="@+id/text_title"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:singleLine="true"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+    <LinearLayout
+        android:layout_height="66dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent">
+        <TextView
+            android:textColor="#666666"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:id="@+id/text_summary"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:lines="3"
+            android:text="这个话题，很多人都又讨论过，我想，我所聊的会不会更深刻一些呢     这个话题，很多人都又讨论过，我想，我所聊的会不会更深刻一些呢     这个话题，很多人都又讨论过，我想，我所聊的会不会更深刻一些呢     HelloWorld" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="4dp">
+        <TextView
+            android:text="作者: 初码"
+            android:id="@+id/text_author"
+            android:textColor="#666666"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingRight="5dp"
+            android:layout_width="match_parent">
+            <ImageView
+                android:layout_height="14dp"
+                android:layout_width="14dp"
+                android:src="@drawable/good" />
+            <TextView
+                android:text="4"
+                android:id="@+id/text_good_count"
+                android:layout_marginLeft="5dp"
+                android:textColor="#666666"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+            <ImageView
+                android:layout_height="14dp"
+                android:layout_width="14dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/watch" />
+            <TextView
+                android:text="4"
+                android:id="@+id/text_watch_count"
+                android:layout_marginLeft="5dp"
+                android:textColor="#666666"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

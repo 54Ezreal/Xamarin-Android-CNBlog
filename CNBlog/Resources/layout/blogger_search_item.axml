@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:paddingLeft="5dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:layout_height="70dp"
+    android:layout_width="match_parent">
+    <ImageView
+        android:src="@drawable/girl"
+        android:id="@+id/img_avator"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitXY"
+        android:layout_width="45dp"
+        android:layout_height="45dp" />
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/text_author"
+        android:layout_marginLeft="8dp"
+        android:textSize="14sp"
+        android:layout_toRightOf="@+id/img_avator"
+        android:text="IT白痴" />
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/text_homepage"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="3dp"
+        android:textSize="12sp"
+        android:layout_marginBottom="3dp"
+        android:layout_toRightOf="@+id/img_avator"
+        android:layout_below="@+id/text_author"
+        android:text="http://www.cnblogs.com/CallMeUncle/" />
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/text_blog_count"
+        android:textSize="12sp"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/img_avator"
+        android:layout_below="@+id/text_homepage"
+        android:text="博文数:60" />
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/text_lastupdate"
+        android:textSize="12sp"
+        android:layout_toRightOf="@+id/text_blog_count"
+        android:layout_below="@+id/text_homepage"
+        android:layout_marginLeft="8dp"
+        android:text="最后更新:2天前" />
+</RelativeLayout>

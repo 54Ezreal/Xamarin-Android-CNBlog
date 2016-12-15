@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:controls="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        layout="@layout/page_head" />
+    <LinearLayout
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:background="@color/title_bg"
+        android:layout_below="@+id/phead"
+        android:gravity="center"
+        android:id="@+id/user_introduce"
+        android:layout_width="match_parent">
+    <!--        <ImageView
+            android:src="@drawable/dog"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/img_head"
+            android:layout_width="120dp" />-->
+        <cnblog.droid.utils.RoundImageView
+            android:src="@drawable/dog"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp"
+            controls:border_width="3dp"
+            controls:border_color="#CCCCCC"
+            android:id="@+id/img_headPic"
+            android:layout_width="120dp" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:id="@+id/text_nickname"
+            android:textSize="@dimen/text_size_mmbig"
+            android:text="IT白痴" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/text_size_normal"
+            android:textColor="@color/white"
+            android:id="@+id/text_age"
+            android:layout_marginTop="2dp"
+            android:text="园龄:3年6个月" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="55dp"
+        android:paddingLeft="30dp"
+        android:layout_below="@+id/user_introduce"
+        android:id="@+id/my_blog"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/setting_item_style"
+        android:layout_width="match_parent">
+        <ImageView
+            android:layout_height="28dp"
+            android:layout_width="28dp"
+            android:src="@drawable/article" />
+        <TextView
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/text_size_mbig"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="我的博客" />
+    </LinearLayout>
+    <View
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#CCCCCC"
+        android:layout_below="@+id/my_blog"
+        android:layout_width="fill_parent" />
+    <LinearLayout
+        android:layout_height="55dp"
+        android:paddingLeft="30dp"
+        android:layout_below="@+id/my_blog"
+        android:layout_marginTop="0.5dp"
+        android:id="@+id/my_collect"
+        android:gravity="center_vertical"
+        android:background="@drawable/setting_item_style"
+        android:layout_width="match_parent">
+        <ImageView
+            android:layout_height="28dp"
+            android:layout_width="28dp"
+            android:src="@drawable/collect3" />
+        <TextView
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/text_size_mbig"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="我的收藏" />
+    </LinearLayout>
+    <View
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#CCCCCC"
+        android:layout_below="@+id/my_collect"
+        android:layout_width="fill_parent" />
+    <LinearLayout
+        android:layout_height="55dp"
+        android:paddingLeft="30dp"
+        android:layout_marginTop="0.5dp"
+        android:layout_below="@+id/my_collect"
+        android:gravity="center_vertical"
+        android:background="@drawable/setting_item_style"
+        android:id="@+id/setting"
+        android:layout_width="match_parent">
+        <ImageView
+            android:layout_height="28dp"
+            android:layout_width="28dp"
+            android:src="@drawable/setting" />
+        <TextView
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/text_size_mbig"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="设置" />
+    </LinearLayout>
+    <View
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#CCCCCC"
+        android:layout_below="@+id/setting"
+        android:layout_width="fill_parent" />
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/btn_loginout"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_style"
+        android:text="退出当前账号" />
+</RelativeLayout>

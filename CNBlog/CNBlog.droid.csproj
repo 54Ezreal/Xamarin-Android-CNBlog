@@ -1,0 +1,368 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{56E953E8-F883-487F-B31B-FCA6FC3785DE}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CNBlog.Droid</RootNamespace>
+    <AssemblyName>CNBlog.Droid</AssemblyName>
+    <TargetFrameworkVersion>v7.0</TargetFrameworkVersion>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <AndroidSupportedAbis>armeabi</AndroidSupportedAbis>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <AndroidSupportedAbis>armeabi;armeabi-v7a;arm64-v8a;x86;x86_64</AndroidSupportedAbis>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <AndroidSupportedAbis>armeabi;arm64-v8a</AndroidSupportedAbis>
+    <AndroidLinkMode>Full</AndroidLinkMode>
+    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+    <Debugger>Xamarin</Debugger>
+    <DebugSymbols>False</DebugSymbols>
+    <AndroidLinkSkip>CNBlogAPI</AndroidLinkSkip>
+    <BundleAssemblies>False</BundleAssemblies>
+    <AndroidCreatePackagePerAbi>False</AndroidCreatePackagePerAbi>
+    <AotAssemblies>False</AotAssemblies>
+    <EnableLLVM>False</EnableLLVM>
+    <AndroidEnableMultiDex>False</AndroidEnableMultiDex>
+    <EnableProguard>False</EnableProguard>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="OneKeyShareBinding, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\OneKeyShareBinding.dll</HintPath>
+    </Reference>
+    <Reference Include="ShareSDKBinding, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\ShareSDKBinding.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="NineOldAndroids">
+      <HintPath>..\packages\NineOldAndroids.2.4.0\lib\MonoAndroid23\NineOldAndroids.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Android.Export" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks">
+      <HintPath>libs\Microsoft.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions">
+      <HintPath>libs\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions">
+      <HintPath>libs\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives">
+      <HintPath>libs\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Sino.Droid.AppMsg">
+      <HintPath>libs\Sino.Droid.AppMsg.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Animated.Vector.Drawable, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Android.Support.Animated.Vector.Drawable.24.2.1\lib\MonoAndroid70\Xamarin.Android.Support.Animated.Vector.Drawable.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Compat, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Android.Support.Compat.24.2.1\lib\MonoAndroid70\Xamarin.Android.Support.Compat.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Core.UI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Android.Support.Core.UI.24.2.1\lib\MonoAndroid70\Xamarin.Android.Support.Core.UI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Core.Utils, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Android.Support.Core.Utils.24.2.1\lib\MonoAndroid70\Xamarin.Android.Support.Core.Utils.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Design, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Android.Support.Design.24.2.1\lib\MonoAndroid70\Xamarin.Android.Support.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Fragment, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Android.Support.Fragment.24.2.1\lib\MonoAndroid70\Xamarin.Android.Support.Fragment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Media.Compat, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Android.Support.Media.Compat.24.2.1\lib\MonoAndroid70\Xamarin.Android.Support.Media.Compat.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Android.Support.v4.24.2.1\lib\MonoAndroid70\Xamarin.Android.Support.v4.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.AppCompat, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Android.Support.v7.AppCompat.24.2.1\lib\MonoAndroid70\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.RecyclerView, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Android.Support.v7.RecyclerView.24.2.1\lib\MonoAndroid70\Xamarin.Android.Support.v7.RecyclerView.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Vector.Drawable, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Android.Support.Vector.Drawable.24.2.1\lib\MonoAndroid70\Xamarin.Android.Support.Vector.Drawable.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="UniversalImageLoader">
+      <HintPath>libs\UniversalImageLoader.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Activities\IndexPageFragment.cs" />
+    <Compile Include="PullableView\OnRefreshListener.cs" />
+    <Compile Include="PullableView\Pullable.cs" />
+    <Compile Include="PullableView\PullableListView.cs" />
+    <Compile Include="PullableView\PullableRecyclerView.cs" />
+    <Compile Include="PullableView\PullToRefreshLayout.cs" />
+    <Compile Include="Utils\UIScheduling.cs" />
+    <Compile Include="Utils\UITimerTask.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SimpleFragmentPagerAdapter.cs" />
+    <Compile Include="Activities\MainActivity.cs" />
+    <Compile Include="Utils\RSACryptoService.cs" />
+    <Compile Include="Activities\WelComeActivity.cs" />
+    <Compile Include="Activities\NewsPageFragment.cs" />
+    <Compile Include="Utils\CommonHelper.cs" />
+    <Compile Include="Utils\CommonAdapter.cs" />
+    <Compile Include="Utils\ViewHolder.cs" />
+    <Compile Include="Activities\ArticleDetailActivity.cs" />
+    <Compile Include="Activities\ArticleCommentsActivity.cs" />
+    <Compile Include="Activities\KbArticlesPageFragment.cs" />
+    <Compile Include="Activities\BloggerSearchActivity.cs" />
+    <Compile Include="Utils\RoundImageView.cs" />
+    <Compile Include="Activities\BloggerHomePageActivity.cs" />
+    <Compile Include="Activities\LoginActivity.cs" />
+    <Compile Include="Activities\EssencePageFragement.cs" />
+    <Compile Include="PullableView\PullableWebView.cs" />
+    <Compile Include="Utils\BlogApplication.cs" />
+    <Compile Include="Activities\BaseFragment.cs" />
+    <Compile Include="Activities\PersonalCenterActivity.cs" />
+    <Compile Include="Activities\MyPostsActivity.cs" />
+    <Compile Include="Activities\BookMarksActivity.cs" />
+    <Compile Include="Activities\KbArticleDetailActivity.cs" />
+    <Compile Include="Activities\BookMarkDetailActivity.cs" />
+    <Compile Include="Activities\NewDetailActivity.cs" />
+    <Compile Include="Activities\BaseActivity.cs" />
+    <Compile Include="Activities\NewsCommentsActitvity.cs" />
+    <Compile Include="Utils\BaseService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <AndroidResource Include="Resources\layout\article_fragment_page.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\tab_item.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\values\colors.xml" />
+    <AndroidResource Include="Resources\drawable\titlebar_menu_selector.xml" />
+    <AndroidResource Include="Resources\mipmap-hdpi\title_bar_menu.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\title_bar_menu_on.png" />
+    <AndroidResource Include="Resources\drawable\frame.png" />
+    <AndroidResource Include="Resources\layout\welcome.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\welcome.png" />
+    <AndroidResource Include="Resources\layout\menu.axml" />
+    <None Include="libs\SlidingMenuSharp.dll" />
+    <AndroidResource Include="Resources\drawable\menu.png" />
+    <AndroidResource Include="Resources\drawable\titlebar_more_selector.xml" />
+    <AndroidResource Include="Resources\mipmap-hdpi\more_on.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\more.png" />
+    <AndroidResource Include="Resources\drawable\setting.png" />
+    <AndroidResource Include="Resources\drawable\category.png" />
+    <AndroidResource Include="Resources\drawable\collect.png" />
+    <AndroidResource Include="Resources\drawable\home.png" />
+    <AndroidResource Include="Resources\drawable\subscribe.png" />
+    <AndroidResource Include="Resources\drawable\dog.png" />
+    <AndroidResource Include="Resources\layout\article_list_item.axml" />
+    <AndroidResource Include="Resources\drawable\good.png" />
+    <AndroidResource Include="Resources\drawable\talk.png" />
+    <AndroidResource Include="Resources\drawable\watch.png" />
+    <AndroidResource Include="Resources\drawable\girl.png" />
+    <None Include="libs\Microsoft.Threading.Tasks.dll" />
+    <None Include="libs\Microsoft.Threading.Tasks.Extensions.dll" />
+    <None Include="libs\System.Net.Http.Extensions.dll" />
+    <None Include="libs\System.Net.Http.Primitives.dll" />
+    <None Include="libs\Ultra-Pull-to-Refresh.dll" />
+    <AndroidResource Include="Resources\layout\article_detail.axml" />
+    <AndroidResource Include="Resources\drawable\titlebar_back_selector.xml" />
+    <AndroidResource Include="Resources\drawable\collect_v1.png" />
+    <AndroidResource Include="Resources\drawable\msg.png" />
+    <AndroidResource Include="Resources\drawable\share.png" />
+    <AndroidResource Include="Resources\drawable\write_comment.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\msg.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\back.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\back_on.png" />
+    <AndroidResource Include="Resources\layout\article_comments.axml" />
+    <AndroidResource Include="Resources\layout\comments_list_item.axml" />
+    <AndroidResource Include="Resources\drawable\footbar_comments_selector.xml" />
+    <AndroidResource Include="Resources\drawable\footbar_share_selector.xml" />
+    <AndroidResource Include="Resources\drawable\footbar_collect_selector.xml" />
+    <AndroidResource Include="Resources\drawable\footbar_writecomments_selector.xml" />
+    <AndroidResource Include="Resources\drawable\icon.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\search.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\search_on.png" />
+    <AndroidResource Include="Resources\drawable\titlebar_search_selector.xml" />
+    <AndroidResource Include="Resources\layout\blogger_search.axml" />
+    <AndroidResource Include="Resources\drawable\bg_edittext.xml" />
+    <AndroidResource Include="Resources\drawable\bg_edittext_focused.xml" />
+    <AndroidResource Include="Resources\drawable\bg_edittext_normal.xml" />
+    <AndroidResource Include="Resources\drawable\search_blogger_bg.png" />
+    <AndroidResource Include="Resources\layout\blogger_search_item.axml" />
+    <AndroidResource Include="Resources\layout\blogger_homepage.axml" />
+    <AndroidResource Include="Resources\mipmap-mdpi\blogger_home.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\blogger_home_on.png" />
+    <AndroidResource Include="Resources\values\Attrs.xml" />
+    <AndroidResource Include="Resources\drawable\titlebar_home_selector.xml" />
+    <AndroidResource Include="Resources\animator\loading_animation.xml" />
+    <AndroidResource Include="Resources\drawable\loading.png" />
+    <AndroidResource Include="Resources\layout\loading_dialog.axml" />
+    <None Include="libs\Sino.Droid.AppMsg.dll" />
+    <AndroidResource Include="Resources\layout\login.axml" />
+    <AndroidResource Include="Resources\mipmap-mdpi\about.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\login.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\arrow.png" />
+    <AndroidResource Include="Resources\drawable\setting_item_style.xml" />
+    <AndroidResource Include="Resources\drawable\button_style.xml" />
+    <AndroidResource Include="Resources\drawable\write.png" />
+    <AndroidResource Include="Resources\layout\write_comments.axml" />
+    <AndroidResource Include="Resources\mipmap-mdpi\submit.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\submit_on.png" />
+    <AndroidResource Include="Resources\drawable\submit_selector.xml" />
+    <AndroidResource Include="Resources\layout\load_more.axml" />
+    <AndroidResource Include="Resources\layout\refresh_head.axml" />
+    <None Include="libs\UniversalImageLoader.dll" />
+    <AndroidResource Include="Resources\layout\error_page.axml" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\dog.png" />
+    <AndroidResource Include="Resources\layout\personal_center.axml" />
+    <AndroidResource Include="Resources\drawable\article.png" />
+    <AndroidResource Include="Resources\drawable\collect3.png" />
+    <AndroidResource Include="Resources\layout\new_list_item.axml" />
+    <AndroidResource Include="Resources\layout\blogger_article_list_item.axml" />
+    <AndroidResource Include="Resources\layout\my_posts.axml" />
+    <AndroidResource Include="Resources\layout\kbarticle_list_item.axml" />
+    <AndroidResource Include="Resources\layout\page_head.axml" />
+    <AndroidResource Include="Resources\animator\pophidden_anim.xml" />
+    <AndroidResource Include="Resources\animator\popshow_anim.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\main.axml" />
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\Icon.png" />
+    <AndroidResource Include="Resources\values\styles.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\articlecontent.html" />
+    <AndroidAsset Include="Assets\ShareSDK.xml">
+      <SubType>Designer</SubType>
+    </AndroidAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\animator\reverse_anim.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\animator\rotating.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xhdpi\pullup_icon_big.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xhdpi\refresh_failed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xhdpi\refresh_succeed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xhdpi\refreshing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xhdpi\load_failed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xhdpi\load_succeed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xhdpi\loading.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xhdpi\pull_icon_big.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\dimens.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\mipmap-xxhdpi\" />
+    <Folder Include="Resources\mipmap-xxxhdpi\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CNBlogAPI\CNBlogAPI.csproj">
+      <Project>{8e357c34-c9f6-432f-9d3f-5a2545ada004}</Project>
+      <Name>CNBlogAPI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\collected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="libs\OneKeyShareBinding.dll" />
+    <Content Include="libs\ShareSDKBinding.dll" />
+    <AndroidResource Include="Resources\values\ssdk_instapaper_strings.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\values\ssdk_strings.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <Import Project="..\packages\Xamarin.Android.Support.Vector.Drawable.24.2.1\build\Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Vector.Drawable.24.2.1\build\Xamarin.Android.Support.Vector.Drawable.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Xamarin.Android.Support.Vector.Drawable.24.2.1\build\Xamarin.Android.Support.Vector.Drawable.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Android.Support.Vector.Drawable.24.2.1\build\Xamarin.Android.Support.Vector.Drawable.targets'))" />
+  </Target>
+  <PropertyGroup>
+    <PostBuildEvent>if /I "$(ConfigurationName)" == "Release" Eazfuscator.NET.exe "$(TargetPath)" --msbuild-project-path "$(ProjectPath)" --msbuild-project-configuration "$(ConfigurationName)" --msbuild-project-platform "$(PlatformName)" --msbuild-solution-path "$(SolutionPath)" -n --newline-flush -v 5.4</PostBuildEvent>
+  </PropertyGroup>
+</Project>

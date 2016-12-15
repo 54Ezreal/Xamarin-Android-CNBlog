@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <include
+        layout="@layout/page_head" />
+    <cnblog.droid.pullableview.PullToRefreshLayout
+        android:id="@+id/refresh_view"
+        android:layout_below="@+id/phead"
+        android:layout_above="@+id/split_line"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include
+            layout="@layout/refresh_head" />
+        <cnblog.droid.pullableview.PullableWebView
+            android:id="@+id/webview"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+        <include
+            layout="@layout/load_more" />
+    </cnblog.droid.pullableview.PullToRefreshLayout>
+    <View
+        android:layout_height="1dp"
+        android:id="@+id/split_line"
+        android:layout_above="@+id/bottom"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_width="fill_parent" />
+    <LinearLayout
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:id="@+id/bottom"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent">
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/footbar_write_comment"
+            android:drawableLeft="@drawable/write_comment"
+            android:background="@null"
+            android:textColor="@color/black"
+            android:text="写评论" />
+        <Button
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="@drawable/collect_v1"
+            android:id="@+id/footbar_collect"
+            android:layout_marginLeft="30dp" />
+        <Button
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="@drawable/footbar_share_selector"
+            android:id="@+id/footbar_share"
+            android:layout_marginLeft="30dp" />
+        <Button
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="@drawable/footbar_comments_selector"
+            android:id="@+id/footbar_comments"
+            android:layout_marginLeft="30dp" />
+    </LinearLayout>
+</RelativeLayout>
