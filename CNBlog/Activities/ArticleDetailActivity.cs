@@ -167,7 +167,7 @@ namespace CNBlog.Droid.Activities
 			}
 		}
 
-        public override bool ShouldOverrideUrlLoading(WebView view, IWebResourceRequest request)
+        public override bool ShouldOverrideUrlLoading(WebView view, string url)
         {
             return false;
         }
